@@ -37,8 +37,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Extras.cs" />
-    <Compile Include="libglmap.linkwith.cs">
-      <DependentUpon>libglmap.a</DependentUpon>
+    <Compile Include="glmap.linkwith.cs">
     </Compile>
     <Compile Include="Inlines.cs" />
     <Compile Include="Constants.cs" />
@@ -50,10 +49,11 @@
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ObjcBindingNativeLibrary Include="libglmap.a" />
+    <ObjcBindingNativeLibrary Include="GLMap.framework\GLMap" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="GLMap.framework\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\world.vm" />
