@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95E3FF6B-760F-417D-B082-F25BE3D23BE0}</ProjectGuid>
+    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GLMap</RootNamespace>
+    <AssemblyName>GLMap.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <PackageVersion>0.8.12.1</PackageVersion>
+    <Authors>Dirk Weltz</Authors>
+    <Description>Xamarin iOS Binding for GLMap</Description>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extras.cs" />
+    <Compile Include="libglmap.linkwith.cs">
+      <DependentUpon>libglmap.a</DependentUpon>
+    </Compile>
+    <Compile Include="Inlines.cs" />
+    <Compile Include="Constants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="libglmap.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\world.vm" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\1.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\10.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\2.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\3.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\4.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\5.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\6.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\7.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\8.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\9.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\ATM.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\Style.mapcss" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\WC.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\airport.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\arrow-back.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\arrow-new.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\arrow.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\baby_goods.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\bank.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\bar.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\beauty_salon.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\bike.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\bowling.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\bus.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\cafe.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\camping.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\car.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\car_rental.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\car_service.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\car_sharing.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\casino.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\charging_station.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\cinema.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\circle-new.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\circle.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\clothing_store.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\dentist.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\disco.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\drinking_water.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\education.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\embassy.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\fast_food.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\ferry.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\font.gf" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\font.gf0.dat" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\font.gf1.dat" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\forbiddenArea.png" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\forbiddenArea%402x.png" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\gas_station.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\golf_course.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\gym.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\health.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\heart.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\hotel.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\info.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\jewellery.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\karaoke.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\library.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\mall.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\man.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\market.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\monument.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\museum.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\music.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\noData.png" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\noData%402x.png" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\office.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\parking.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\pharmacy.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\pizza.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\playground.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\police_station.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\pool.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\post_office.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\pub.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\question.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\railway.png" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\railway.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\railway%402x.png" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\railway_station.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\residence.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\restaurant.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\small-star.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\spa.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\sport.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\square.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\star.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\store.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\subway.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\supermarket.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\test.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\theater.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\theme_park.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\tram.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\triangle.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\vet.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\viewpoint.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\wifi.svgpb" />
+    <BundleResource Include="Resources\DefaultStyle.bundle\zoo.svgpb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+</Project>
