@@ -10,6 +10,7 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 Xam-GLMap-iOS-Demo/Resources/[Aa][Pp][Ii][Kk]ey.txt
+Xam-GLMap-iOS/libglmap.a
 
 # Build results
 [Dd]ebug/
