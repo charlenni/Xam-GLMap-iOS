@@ -40,4 +40,7 @@ Global
 		{77083E3C-5FC6-49CE-80ED-6D28272BBB85}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{77083E3C-5FC6-49CE-80ED-6D28272BBB85}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 0.8.14
+	EndGlobalSection
 EndGlobal

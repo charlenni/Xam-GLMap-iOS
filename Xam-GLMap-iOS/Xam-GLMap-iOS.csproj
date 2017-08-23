@@ -12,6 +12,7 @@
     <PackageVersion>0.8.12.1</PackageVersion>
     <Authors>Dirk Weltz</Authors>
     <Description>Xamarin iOS Binding for GLMap</Description>
+    <ReleaseVersion>0.8.14</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
