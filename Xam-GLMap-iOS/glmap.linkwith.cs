@@ -7,4 +7,4 @@
 
 using ObjCRuntime;
 
-[assembly: LinkWith ("GLMap", SmartLink = true, ForceLoad = true, Frameworks = "CoreGraphics CoreText CoreLocation QuartzCore OpenGLES Security Accelerate", IsCxx = true)]
+[assembly: LinkWith ("GLMap", SmartLink = true, ForceLoad = true, Frameworks = "CoreGraphics CoreText CoreLocation QuartzCore OpenGLES GLKit Security Accelerate", IsCxx = true)]

@@ -20,9 +20,10 @@ namespace XamGLMapiOSDemo
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-			// Override point for customization after application launch.
-			// If not required for your application you can safely delete this method
+            // Override point for customization after application launch.
+            // If not required for your application you can safely delete this method
 
+            GLMapManager.SharedManager().Init();
 			GLMapManager.SharedManager().ApiKey = File.ReadAllText("./APIKey.txt"); ;
 			
             return true;
